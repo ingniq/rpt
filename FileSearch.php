@@ -7,9 +7,24 @@ declare(strict_types=1);
  */
 class FileSearch
 {
+    /**
+     * @var string The path to the folder with files.
+     */
     private string $folderPath;
+
+    /**
+     * @var string The search pattern for file names.
+     */
     private string $searchPattern;
+
+    /**
+     * @var string The recursive search pattern for file names.
+     */
     private string $recursiveSearchPattern;
+
+    /**
+     * @var bool Indicates whether the search should be performed recursively.
+     */
     private bool $isRecursive;
 
     /**
